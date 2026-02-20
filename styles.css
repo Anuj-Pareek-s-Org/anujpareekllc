@@ -449,8 +449,12 @@ section:not(#hero) {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+}
+
+.team-card:first-child {
+    grid-column: 1 / -1;
 }
 
 .team-card {
